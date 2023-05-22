@@ -1,5 +1,5 @@
 {
-  "name": "my_learn",
+  "name": "01",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,html,css,md}\" --config ./.prettierrc",
+    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.8.8"
   }
 }
