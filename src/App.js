@@ -2,17 +2,45 @@ import logo from './assets/img/OPM.webp'
 import './App.css'
 import Layout from './components/layout/layout'
 import Nom from './components/nom'
-import linkedin from './components/linkedin'
+import Linkedin from './components/linkedin'
+import Competence from './components/competence'
+import Diplome from './components/diplome'
+import Interet from './components/Interet'
+import Url from './components/url'
+import Work from './components/travaux'
+import hobbies from './hobbies.json'
+
+
+
+const lien = [
+    {
+        id: 1,
+        name: 'https://www.adultswim.fr/series/rick-and-morty',
+    },
+    {
+        id: 2,
+        name: 'https://www.adultswim.fr/series/rick-and-morty',
+    }
+];
+
+
 
 function App() {
     return (
         <div className='App'>
             <Layout>
-                <Nom nom='SALHI' prenom='Mourad' job='Développeur FullSteack' />
+                <Nom nom='SALHI' prenom='Mourad' job='Développeur FullStack' />
+                <Linkedin lien='https://www.linkedin.com/in/mourad-salhi-2b1b3b1b3/' />
+                <Competence techno='Java' level='Intermédiare' />
+                <Diplome cours='Bachelor Développeur FullSteack' periode='2022-2023' />
+                <Diplome cours='Développeur Web' periode='2021-2022' />
+                <Interet hobbies={hobbies} />
+                <Url lien={lien} />
+                <Work NomProjet='Projet 1' description='Recherche via Api pour trouver des personnage' ProjetImg={logo} ProjetLien='https://www.adultswim.fr/series/rick-and-morty' />
+                <Work NomProjet='Projet 2' description='Recherche via Api pour trouver des personnage' ProjetImg={logo} ProjetLien='https://www.adultswim.fr/series/rick-and-morty' />
             </Layout>
-            <Layout>
-                <linkedin lien='https://www.linkedin.com/in/mourad-salhi-2b1b3b1b3/' />
-            </Layout>
+
+
         </div>
 
     )

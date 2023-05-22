@@ -7,6 +7,7 @@ const Layout = ({ children }) => {
             <main>
                 {children}
             </main>
+            <br />
             <footer>Mourad S 2023</footer>
         </main>
     );

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Jeux Vidéo"
+    },
+    {
+        "id": 2,
+        "name": "Manga"
+    },
+    {
+        "id": 3,
+        "name": "Foot"
+    },
+    {
+        "id": 4,
+        " name": "Cinéma"
+    },
+    {
+        "id": 5,
+        "name": "Caisse à savon"
+    }
+]

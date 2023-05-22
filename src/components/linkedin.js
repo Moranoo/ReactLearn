@@ -1,4 +1,4 @@
-const linkedin = ({ lien, prenom }) => {
+const Linkedin = ({ lien }) => {
     return (
         <>
             <a href={lien}>Liens vers mon profil</a>
@@ -7,4 +7,4 @@ const linkedin = ({ lien, prenom }) => {
 
 }
 
-export default linkedin;
+export default Linkedin;
